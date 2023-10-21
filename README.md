@@ -1,2 +1,2 @@
 # FinalProjectWeb
-here is my repo
+Here is my repository for my Final Project for my Web Programming class. 
