@@ -16,6 +16,9 @@ app.listen(PORT, () => {
 });
 
 //mobile menu
+//This is where we add the app version and displayed the tabs active 
+    //Need to be changed up a little because it has to be functional, not just opened already 
+
 console.log('3: End of file, waiting for requests...');
 
 const burgerIcon = document.querySelector('#burger');
