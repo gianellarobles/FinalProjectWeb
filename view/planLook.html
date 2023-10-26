@@ -1,0 +1,183 @@
+<!--Need to import the tab files here to get it executed-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealingFitness</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<style>
+    body {
+        background: lightpink;
+        height: 1500px;
+    }
+</style>
+
+<body>
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                Healing Fitness &nbsp;
+                <i class="fas fa-hand-holding-heart"></i>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- This line helps with the app version of the website. Demonstrates the tabs-->
+        <div id="navbarBasicExample" class="navbar-menu is-active">
+            <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Admin
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Purpose
+                        </a>
+                        <a class="navbar-item">
+                            Plan
+                        </a>
+                        <a class="navbar-item">
+                            Progress
+                        </a>
+                    </div>
+                </div>
+                </a>
+                <a class="navbar-item">
+                    <i class="fas fa-running"> &nbsp;</i>
+                    My Activity
+                </a>
+                <a class="navbar-item">
+                    <i class="fas fa-chart-line"> &nbsp;</i>
+                    Statistics
+                </a>
+                <a class="navbar-item">
+                    <i class="fas fa-users">&nbsp;</i>
+                    Friends Activity
+                </a>
+                <a class="navbar-item">
+                    <i class="fas fa-search"> &nbsp;</i>
+                    People Search
+                </a>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-danger">
+                            <strong>Sign Up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns has-text-white">
+                <div class="column">
+                    <p class="title is-1 has-text-white"> Plan: </p>
+                    <p class="title is-5 has-text-white">&nbsp;Let's see what the right plan is for you, ${username}! </p>
+                    <!-- Add an image later, try to make it larger-->
+
+                    <p> &nbsp;I want to start off and say excerising at least for 30 minutes can truly make a difference in our lives! Excerises at least once a day don't have to mean going to the gym everyday. Some excerise ideas can include: </p>
+
+                    &nbsp;
+                    <ol>
+                        <li>Yoga</li>
+                        <li>Pilates</li>
+                        <li>Karate</li>
+                        <li>Lifting weights</li>
+                        <li>Walking/Running</li>
+                    </ol>
+                    &nbsp;
+                    
+                    <div class="field">
+                        <label class="label has-text-white">Excerise</label>
+                        <div class="control">
+                            <div class="select">
+                                <select>
+                                    <option>Select Excerise</option>
+                                    <option>Yoga</option>
+                                    <option>Pilates</option>
+                                    <option>Karate</option>
+                                    <option>Lifting weights</option>
+                                    <option>Walking</option>
+                                    <option>Running</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-white">Time</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-success is-danger" type="text" placeholder="Text input" value="bulma">
+                            <span class="icon is-small is-left">
+                                <i class="far fa-clock"></i>
+                            </span>
+                            <!--If they have less than 30 minutes, create a new message saying "Almost there!" -->
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                        <p class="help is-success is-danger">Great Job!</p>
+                    </div>
+
+                    
+                    <div class="field">
+                        <label class="label has-text-white">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Textarea"></textarea>
+                        </div>
+                    </div>
+                
+                   <p class="title is-6 has-text-white">Would you do this excerise again?</p>
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio ">
+                                <input type="radio" name="question">
+                                 Yes
+                            </label>
+                            <label class="radio ">
+                                <input type="radio" name="question">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-danger">Submit</button>
+                        </div>
+                        <div class="control">
+                            <button class="button has-text-danger is-light">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
