@@ -1,12 +1,10 @@
 body {
-    background-color: aliceblue;
+    background-color: lightpink;
     height: 100vh;
 }
 
 .container {
     height: 100vh;
+    
 }
 
-.columns {
-    background-color: white;
-}

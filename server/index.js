@@ -15,4 +15,12 @@ app.listen(PORT, () => {
     console.log(`2: Server is running at http://localhost:${PORT}`);
 });
 
+//mobile menu
 console.log('3: End of file, waiting for requests...');
+
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+})

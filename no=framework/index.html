@@ -1,140 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Page</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HealingFitness</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="container" id="app">
-
-        <div class="columns">
-            <div class="column">
-                <h1 class="title">A special page</h1>
-                <h2 class="subtitle">A very special page</h2>
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+            <div class ="navbar-brand">
+                <a class = "navbar-item" href="index.html">
+                    Healing Fitness &nbsp;
+                    <i class="fas fa-hand-holding-heart"></i>
+                </a>
+                
+                <a role ="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-            <div class="column"></div>
-        </div>
-
-
-        <div class="columns">
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
+            <div id="navbarBasicExample" class="navbar-menu is-active">
+                <div class="navbar-start">
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                    Admin
+                                </a>
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item">
+                                        Purpose
+                                    </a>
+                                    <a class="navbar-item">
+                                        Plan
+                                    </a>
+                                    <a class="navbar-item">
+                                        Progress
+                                    </a>
+                                </div>
                             </div>
-                            <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                            </div>
-                        </div>
+                            </a>
+                    <a class="navbar-item">
+                    <i class="fas fa-running"> &nbsp;</i>
+                        My Activity
+                    </a>
+                    <a class="navbar-item">
+                        <i class="fas fa-chart-line"> &nbsp;</i>
+                        Statistics
+                    </a>
+                    <a class="navbar-item">
+                        <i class="fas fa-users">&nbsp;</i>
+                        Friends Activity
+                    </a>
+                    <a class="navbar-item">
+                        <i class="fas fa-search"> &nbsp;</i>
+                        People Search
+                    </a>
+    
+                </div>
 
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-danger">
+                                <strong>Sign Up</strong>
+                            </a>
+                            <a class="button is-light" >
+                                Log in
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <article class="panel is-primary">
-                    <p class="panel-heading">
-                        Primary
-                    </p>
-                    <p class="panel-tabs">
-                        <a class="is-active">All</a>
-                        <a>Public</a>
-                        <a>Private</a>
-                        <a>Sources</a>
-                        <a>Forks</a>
-                    </p>
-                    <div class="panel-block">
-                        <p class="control has-icons-left">
-                            <input class="input is-primary" type="text" placeholder="Search">
-                            <span class="icon is-left">
-                                <i class="fas fa-search" aria-hidden="true"></i>
-                            </span>
-                        </p>
+
+        </nav>
+        <section class="section">
+            <div class="container">
+                <div class="columns has-text-white">
+                    <div class="column">
+                        <p class="title is-1 has-text-white"><strong>Welcome to Healing Fitness </strong></p>
+                        <p class="title is-5 has-text-white">&nbsp;Begin your healthy fitness journey today with our website. </p>
+                       <!-- Add this icon later, try to make it larger
+                        <i class="fas fa-hand-holding-heart icon is-large" ></i>-->
                     </div>
-                    <a class="panel-block is-active">
-                        <span class="panel-icon">
-                            <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        bulma
-                    </a>
-                    <a class="panel-block">
-                        <span class="panel-icon">
-                            <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        marksheet
-                    </a>
-                    <a class="panel-block">
-                        <span class="panel-icon">
-                            <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        minireset.css
-                    </a>
-                    <a class="panel-block">
-                        <span class="panel-icon">
-                            <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        jgthms.github.io
-                    </a>
-                </article>
-
-            </div>
-            <div class="column">
-                <div class="notification is-light" :class="x.type" v-for="x in list" v-show="x.open">
-                    <button class="delete" @click="x.open = false"></button>
-                    {{ x.msg }}
                 </div>
-
             </div>
-        </div>
+        </section>
+
+        <script src="index.js">
 
 
-    </div>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script>
-
-        const { createApp, ref } = Vue
-
-
-        const app = createApp({
-            setup() {
-                const list = ref([
-                    { msg: 'Hello World', open: true, type: 'is-success' },
-                    { msg: 'Congrats! You did it', open: true, type: 'is-warning' },
-                    { msg: 'You are a Vue3 master', open: true, type: 'is-info' },
-                    { msg: 'Oop! You did it again', open: true, type: 'is-danger' },
-                ]);
-
-                //open.value = false;
-
-                return { list }
-            }
-        })
-
-        app.mount('#app')
-
-    </script>
-</body>
-
+        </script>   
+    </body>
 </html>
+
