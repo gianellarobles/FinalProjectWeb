@@ -1,18 +1,18 @@
 {
    "name": "FinalProjectWeb",
    "version": "1.0.0",
-  "description": "",
-  "author": "",
-  "license": "ISC",
-
-  "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon --watch ./server server/index.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  }
+   "description": "",
+   "author": "",
+   "license": "ISC",
+   "scripts": {
+      "start": "node server/index.js",
+      "dev": "nodemon --watch ./server server/index.js"
+   },
+   "dependencies": {
+      "express": "^4.18.2",
+      "vue-router": "^4.2.5"
+   },
+   "devDependencies": {
+      "nodemon": "^3.0.1"
+   }
 }

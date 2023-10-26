@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 import LoginBadge from './LoginBadge.vue';
-import FlyoutPanel from './FlyoutPanel.vue';
+i
 
 const isActive = ref(false);
 const isShoppingCartOpen = ref(false);
@@ -27,31 +27,45 @@ const isShoppingCartOpen = ref(false);
 
         <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': isActive }">
             <div class="navbar-start">
-                <RouterLink class="navbar-item" to="/">Home</RouterLink>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                              Admin
+                        </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                                Purpose
+                         </a>
+                        <a class="navbar-item">
+                             Plan
+                        </a>
+                         <a class="navbar-item">
+                            Progress
+                         </a>
+                             </div>
+                         </div>
+                        
+                        <a class="navbar-item">
+                        <i class="fas fa-running"> &nbsp;</i>
+                            My Activity
+                        </a>
+                        <a class="navbar-item">
+                            <i class="fas fa-chart-line"> &nbsp;</i>
+                            Statistics
+                        </a>
+                        <a class="navbar-item">
+                            <i class="fas fa-users">&nbsp;</i>
+                            Friends Activity
+                        </a>
+                        <a class="navbar-item">
+                            <i class="fas fa-search"> &nbsp;</i>
+                            People Search
+                        </a>
+    
+                    
+                <RouterLink class="navbar-item" to="/">home</RouterLink>
                 <RouterLink class="navbar-item" to="/about">About</RouterLink>
                 <RouterLink class="navbar-item" to="/products">Products</RouterLink>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
-                </div>
             </div>
 
             <div class="navbar-end">
@@ -69,9 +83,7 @@ const isShoppingCartOpen = ref(false);
             </div>
         </div>
     </nav>
-    <FlyoutPanel :class="{ 'is-active': isShoppingCartOpen }">
-        <h1 class="subtitle">Shopping Cart</h1>
-    </FlyoutPanel>
+ 
 </template>
 
 
