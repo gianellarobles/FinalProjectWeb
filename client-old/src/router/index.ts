@@ -31,3 +31,4 @@ function requireLogin(to: RouteLocationNormalized, from: RouteLocationNormalized
     }
 }
 
+export default router
