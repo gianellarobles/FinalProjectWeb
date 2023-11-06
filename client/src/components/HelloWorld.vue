@@ -1,4 +1,4 @@
-<!--<script setup lang="ts">
+<script setup lang="ts">
 defineProps<{
   msg: string
 }>()
@@ -39,10 +39,6 @@ h3 {
   }
 }
 </style>
--->
-
-<!--
-
 <head>
     <!-- The name of the website on the tab -->
     <title>Bulma</title>
@@ -51,7 +47,6 @@ h3 {
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
--->
 <template>
 <body>
         <!-- This is the navbar-->
@@ -69,7 +64,6 @@ h3 {
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-font
             </a>
         </div>
 
