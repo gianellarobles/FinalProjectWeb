@@ -1,10 +1,12 @@
 <script setup lang="ts">
+
 defineProps<{
   msg: string 
 }>()
 </script>
 
-<template>
+<template> 
+
   <div class="greetings">
     <h1 class="red">{{ msg }}</h1>
     <h3>
