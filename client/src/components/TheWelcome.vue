@@ -12,9 +12,9 @@ import SearchIcon from './icons/IconSearch.vue'
     <template #icon>
       <AdminIcon />
     </template>
-    <template #heading>Admin</template>
+    <template #heading>About</template>
 
-    Here is to check your admin status. The drop down will include Plan and Progress tabs
+    Here is to check your status. The drop down will include Plan and Progress tabs
   </WelcomeItem>
 
   <WelcomeItem>
