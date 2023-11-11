@@ -6,14 +6,14 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-     <i class="fas fa-hand-holding-heart"></i>
+     
     <!--<img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
     <div class="wrapper">
     
       <HelloWorld msg="HealingFitness"/>
 
       <nav>
-        <RouterLink to="/home">Home</RouterLink>
+        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>

@@ -13,6 +13,7 @@ import SearchIcon from './icons/IconSearch.vue'
       <AdminIcon />
     </template>
     <template #heading>Admin</template>
+
     Here is to check your admin status. The drop down will include Plan and Progress tabs
   </WelcomeItem>
 
@@ -20,7 +21,7 @@ import SearchIcon from './icons/IconSearch.vue'
     <template #icon>
       <ActivityIcon />
     </template>
-    <template #heading>My Activity</template>
+ <template #heading>My Activity</template>
     Here in your activity, you can see your Activity for the day and your plan will be displayed.
   </WelcomeItem>
 
