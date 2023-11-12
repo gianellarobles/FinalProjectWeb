@@ -20,7 +20,6 @@ import HomeIcon from './components/icons/IconHome.vue'
       <HelloWorld msg="Healing Fitness"/>
       <nav>
         <RouterLink to="/"><HomeIcon/> Home</RouterLink>
-    
         <RouterLink to="/admin"><AdminIcon /> Admin</RouterLink>
         <RouterLink to="/activity"><ActivityIcon /> My Activity</RouterLink>
         <RouterLink to="/statistics"><StatisticsIcon /> My Statistics</RouterLink>
