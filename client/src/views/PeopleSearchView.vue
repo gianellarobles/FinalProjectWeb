@@ -1,11 +1,14 @@
 <template>
 
-    <div class="search">
+ <div class="search">
         <h2>
             
             This is my search page
         </h2>
     </div>
+
+    <p><strong>Enter name</strong></p>
+    <input class="input is-danger" type="text" placeholder="Danger input">
 </template>
 
 <style>

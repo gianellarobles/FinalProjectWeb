@@ -3,7 +3,7 @@
         <h2>
             This is my statistics page
         </h2>
-        <article class="message">
+        <article class="message is-primary">
       <div class="message-header">
         <p>Hello World</p>
         <button class="delete" aria-label="delete"></button>
