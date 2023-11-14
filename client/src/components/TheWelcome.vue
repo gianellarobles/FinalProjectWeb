@@ -5,12 +5,13 @@ import ActivityIcon from './icons/IconActivity.vue'
 import StatisticsIcon from './icons/IconStatistics.vue'
 import FriendsIcon from './icons/IconFriends.vue'
 import SearchIcon from './icons/IconSearch.vue'
+
 </script>
 
 <template>
     <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
                 <div class ="navbar-brand">
-                    <a class = "navbar-item" href="index.html">
+                    <a class = "navbar-item" href="/">
                         Healing Fitness &nbsp;
                         <i class="fas fa-hand-holding-heart"></i>
                     </a>
@@ -25,7 +26,7 @@ import SearchIcon from './icons/IconSearch.vue'
                 <div id="navbarBasicExample" class="navbar-menu is-active">
                     <div class="navbar-start">
                                 <div class="navbar-item has-dropdown is-hoverable">
-                                    <a class="navbar-link">
+                                    <a class="navbar-link" href= "/admin" >
                                         Admin
                                     </a>
                                     <div class="navbar-dropdown">
@@ -41,19 +42,19 @@ import SearchIcon from './icons/IconSearch.vue'
                                     </div>
                                 </div>
                             
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="/activity">
                         <i class="fas fa-running"> &nbsp;</i>
                             My Activity
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="/statistics">
                             <i class="fas fa-chart-line"> &nbsp;</i>
                             Statistics
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="/friends">
                             <i class="fas fa-users">&nbsp;</i>
                             Friends Activity
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="/search">
                             <i class="fas fa-search"> &nbsp;</i>
                             People Search
                         </a>
