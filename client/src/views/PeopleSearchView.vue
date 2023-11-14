@@ -9,6 +9,7 @@
 
     <p><strong>Enter name</strong></p>
     <input class="input is-danger" type="text" placeholder="Danger input">
+    
 </template>
 
 <style>

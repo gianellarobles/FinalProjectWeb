@@ -24,7 +24,7 @@ a,
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: hsla(335, 80%, 46%, 0.2);
   }
 }
 
@@ -40,3 +40,6 @@ a,
     padding: 0 2rem;
   }
 }
+
+
+

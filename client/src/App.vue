@@ -8,6 +8,7 @@ import FriendsIcon from './components/icons/IconFriends.vue'
 import SearchIcon from './components/icons/IconSearch.vue'
 import HomeIcon from './components/icons/IconHome.vue'
 
+
 </script>
 
 <template>
@@ -30,6 +31,7 @@ import HomeIcon from './components/icons/IconHome.vue'
   </header>
 
   <RouterView />
+
 </template>
 
 <style scoped>
