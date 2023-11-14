@@ -10,7 +10,8 @@
    },
    "dependencies": {
       "express": "^4.18.2",
-      "vue-router": "^4.2.5"
+      "vue-router": "^4.2.5",
+      "mongodb":"^6.2.0"
    },
    "devDependencies": {
       "nodemon": "^3.0.1",
