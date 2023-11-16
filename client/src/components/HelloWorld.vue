@@ -63,10 +63,10 @@ defineProps<{
                           <div class="navbar-end">
                               <div class="navbar-item">
                                   <div class="buttons">
-                                      <a class="button is-danger">
+                                      <a class="button is-danger" href="/signup">
                                           <strong>Sign Up</strong>
                                       </a>
-                                      <a class="button is-light" >
+                                      <a class="button is-light" href="/login">
                                           Log in
                                       </a>
                                   </div>
