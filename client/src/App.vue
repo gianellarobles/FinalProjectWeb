@@ -1,32 +1,17 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import AdminIcon from './components/icons/IconAdmin.vue'
-import ActivityIcon from './components/icons/IconActivity.vue'
-import StatisticsIcon from './components/icons/IconStatistics.vue'
-import FriendsIcon from './components/icons/IconFriends.vue'
-import SearchIcon from './components/icons/IconSearch.vue'
-import HomeIcon from './components/icons/IconHome.vue'
-
 
 </script>
 
 <template>
   <header>
      
-    <!-- This is the logo for HealingFitness
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
+    <!-- This is the logo for HealingFitness-->
     <div class="wrapper">
     
       <HelloWorld msg="Healing Fitness"/>
-    <!--  <nav>
-        <RouterLink to="/"><HomeIcon/> Home</RouterLink>
-        <RouterLink to="/admin"><AdminIcon /> Admin</RouterLink>
-        <RouterLink to="/activity"><ActivityIcon /> My Activity</RouterLink>
-        <RouterLink to="/statistics"><StatisticsIcon /> My Statistics</RouterLink>
-        <RouterLink to="/friends"><FriendsIcon /> My Friends</RouterLink>
-        <RouterLink to="/search"><SearchIcon /> People Search</RouterLink>
-      </nav>-->
+  
     </div>
   </header>
 
@@ -36,14 +21,10 @@ import HomeIcon from './components/icons/IconHome.vue'
 
 <style scoped>
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  line-height: 1;
+  max-height: 120vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
 nav {
   width: 100%;
@@ -74,12 +55,9 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+   
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
 
   header .wrapper {
     display: flex;
