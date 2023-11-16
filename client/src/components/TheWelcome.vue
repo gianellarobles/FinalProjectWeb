@@ -36,9 +36,6 @@ import SearchIcon from './icons/IconSearch.vue'
                                         <a class="navbar-item">
                                             Plan
                                         </a>
-                                        <a class="navbar-item">
-                                            Progress
-                                        </a>
                                     </div>
                                 </div>
                             
