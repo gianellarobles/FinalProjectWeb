@@ -1,18 +1,21 @@
 <template>
     <div class="login">
-        <h2>
-            This is my login page
-        </h2>
-    </div>
+      
+            <span class="icon">
+                <i class="fas fa-user"></i>
+            </span>
+            <span>Login</span>
+            <br /> <br />
 
-    <p><strong>Enter name</strong></p>
+   <p><strong>Enter name</strong></p>
     <input class="input is-danger" type="text" placeholder="Danger input">
+    </div>
 </template>
 
 <style>
 @media (min-width: 1024px) {
     .login {
-        min-height: 100vh;
+        min-height: 120vh;
         display: flex;
         align-items: center;
     }

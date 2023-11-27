@@ -34,7 +34,7 @@
   --color-heading: var(--vt-c-text-dark-2);
   --color-text: var(--vt-c-text-light-1);
 
-  --section-gap: 160px;
+  --section-gap: 200px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,7 +60,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 150vh;
   color: var(--color-text);
   background: var(--color-background);
   transition:

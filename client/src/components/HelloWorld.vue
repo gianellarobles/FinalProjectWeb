@@ -24,7 +24,7 @@ defineProps<{
                           </a>
                       </div>
                       <!-- This line helps with the app version of the website. Demonstrates the tabs-->
-                      <div id="navbarBasicExample" class="navbar-menu is-active">
+                      <div id="navbarBasicExample" class="navbar-menu">
                           <div class="navbar-start">
                                       <div class="navbar-item has-dropdown is-hoverable">
                                           <a class="navbar-link" href="/admin" >
@@ -75,7 +75,6 @@ defineProps<{
                      </div>
                 </nav>
   </div>
-      
 </template>
 
 <style scoped>

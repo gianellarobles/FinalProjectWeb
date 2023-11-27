@@ -1,8 +1,6 @@
 <template>
     <div class="activity">
-        <h2>
-            This is my activity page
-        </h2>
+    
           <section class="section">
             <div class="container">
                 <div class="columns has-text-white">
