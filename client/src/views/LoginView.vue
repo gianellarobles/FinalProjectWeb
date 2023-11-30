@@ -17,7 +17,8 @@
     .login {
         min-height: 120vh;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+       
     }
 }
 </style>
