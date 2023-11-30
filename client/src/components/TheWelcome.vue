@@ -9,7 +9,6 @@ import SearchIcon from './icons/IconSearch.vue'
 </script>
 
 <template>
-    
   <WelcomeItem>
     <template #icon>
       <AdminIcon />
@@ -50,9 +49,6 @@ import SearchIcon from './icons/IconSearch.vue'
     </template>
     <template #heading>People Search</template>
     You can search for people and add them as friends. You can also see their progress and make suggestions.
- 
-    <!--
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a><div class="--> 
 
   </WelcomeItem>
 

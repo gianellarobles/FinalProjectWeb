@@ -20,8 +20,8 @@
 }
 
 .details {
-  flex: 1;
-  margin-left: 0.5rem;
+  flex: 2;
+  margin-left: 1rem;
 }
 
 i {
