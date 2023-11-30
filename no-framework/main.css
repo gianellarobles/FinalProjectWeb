@@ -1,0 +1,12 @@
+body {
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+}
+
+.columns {
+    background-color: white;
+}
