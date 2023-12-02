@@ -10,7 +10,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <!-- This is the logo for HealingFitness-->
     <div class="wrapper">
   
-      <HelloWorld msg="Healing Fitness"/>
+      <HelloWorld/>
   
     </div>
   </header>

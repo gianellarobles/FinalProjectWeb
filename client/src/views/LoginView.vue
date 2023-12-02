@@ -18,7 +18,6 @@
         min-height: 120vh;
         display: flex;
         flex-direction: column;
-       
     }
 }
 </style>
