@@ -3,7 +3,7 @@
 </script>
 
 <template> 
-  <div class="greetings"> 
+ 
     
 <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                       <div class ="navbar-brand">
@@ -68,7 +68,7 @@
                          </div>
                      </div>
                 </nav>
-  </div>
+  
 </template>
 
 <style scoped>
