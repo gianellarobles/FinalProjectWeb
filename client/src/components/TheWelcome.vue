@@ -9,12 +9,17 @@ import SearchIcon from './icons/IconSearch.vue'
 </script>
 
 <template>
-  <WelcomeItem>
+<br>
+<h1 class="red is-size-1 has-text-weight-medium has-text-centered">Welcome to Healing Fitness</h1>
+
+<h2 class="is-size-3 has-text-weight-medium has-text-centered">Here is a quick tour of the website</h2>
+ <WelcomeItem>
     <template #icon>
       <AdminIcon />
     </template>
+    
+    
     <template #heading>Admin</template>
-
     Here is to check your status. The drop down will include Plan and Progress tabs
   </WelcomeItem>
 
@@ -32,7 +37,6 @@ import SearchIcon from './icons/IconSearch.vue'
     </template>
     <template #heading>Statistics</template>
     In your statistics page, your acitivities per week will be displayed. Additionally, the exercise you like to do the most and a breakdown of how your mental health is doing. 
-
   </WelcomeItem>
 
   <WelcomeItem>
@@ -49,10 +53,8 @@ import SearchIcon from './icons/IconSearch.vue'
     </template>
     <template #heading>People Search</template>
     You can search for people and add them as friends. You can also see their progress and make suggestions.
-
   </WelcomeItem>
 
 </template>
-
 
 
