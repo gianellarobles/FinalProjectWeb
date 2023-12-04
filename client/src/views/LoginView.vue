@@ -13,7 +13,7 @@
 </template>
 
 <style>
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
     .login {
         min-height: 120vh;
         display: flex;

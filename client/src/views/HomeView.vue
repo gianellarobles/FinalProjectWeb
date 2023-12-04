@@ -6,3 +6,12 @@ import TheWelcome from '../components/TheWelcome.vue'
     <TheWelcome />
   </main>
 </template>
+<style scoped>
+@media (min-width: 640px) {
+    .home {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+</style>

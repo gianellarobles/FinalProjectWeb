@@ -21,12 +21,12 @@
                       <div id="navbarBasicExample" class="navbar-menu">
                           <div class="navbar-start">
                                       <div class="navbar-item has-dropdown is-hoverable">
-                                          <a class="navbar-link" href="/admin" >
+                                          <a class="navbar-link" >
                                             <i class="fas fa-book">&nbsp;</i>
                                            Admin &nbsp;
                                           </a>
                                           <div class="navbar-dropdown">
-                                              <a class="navbar-item">
+                                              <a class="navbar-item" href="/purpose">
                                                   Purpose
                                               </a>
                                               <a class="navbar-item">
