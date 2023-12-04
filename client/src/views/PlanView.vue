@@ -7,8 +7,12 @@
     <h2 class="is-size-3 has-text-weight-medium has-text-centered">Now that you know a little about me, tell me about yourself.</h2>
     <br>
          <img src="IMG_5243.png" alt="panda" class="center">
+    
+    <ul>
+        <li>
     <h3 class="has-text-weight-medium has-text-left">What is your goal?</h3>
-    <br>
+    <br></li>
+    </ul>
     <h3 class="has-text-weight-medium has-text-left">What is your plan?</h3>
     <br>
     <h3 class="has-text-weight-medium has-text-left">Do you want to change your eating habits?</h3>

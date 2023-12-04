@@ -13,12 +13,11 @@ import SearchIcon from './icons/IconSearch.vue'
 <h1 class="red is-size-1 has-text-weight-medium has-text-centered">Welcome to Healing Fitness</h1>
 
 <h2 class="is-size-3 has-text-weight-medium has-text-centered">Here is a quick tour of the website</h2>
- <WelcomeItem>
+<br>
+<WelcomeItem>
     <template #icon>
       <AdminIcon />
     </template>
-    
-    
     <template #heading>Admin</template>
     Here is to check your status. The drop down will include Plan and Progress tabs
   </WelcomeItem>
