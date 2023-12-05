@@ -8,19 +8,29 @@
     <br>
          <img src="IMG_5243.png" alt="panda" class="center">
     
+    <div class="content is-small">
     <ul>
         <li>
     <h3 class="has-text-weight-medium has-text-left">What is your goal?</h3>
-    <br></li>
-    </ul>
+    <br>
+    </li>
+    <li>
     <h3 class="has-text-weight-medium has-text-left">What is your plan?</h3>
+    </li>
     <br>
+    <li>
     <h3 class="has-text-weight-medium has-text-left">Do you want to change your eating habits?</h3>
+    </li>
     <br>
+    <li>
     <h3 class="has-text-weight-medium has-text-left">Do you want to start exercising?</h3>
+    </li>
     <br>
+      </ul>
+    </div>
     <br>
-    <h3 class="red is-size-4 has-text-weight-medium has-text-centered">Get started today and track your progress</h3>
+    <h3 class="red is-size-4 has-text-weight-semibold has-text-centered">Get started today and track your progress</h3>
+    
     <br>
     <h3 class="has-text-weight-medium has-text-centered">Click on the button "Sign Up" to create an account now</h3>
 </template>

@@ -23,7 +23,7 @@
             </figcaption>
             <br>
     <h3 class="has-text-weight-medium has-text-centered">&nbsp;&nbsp;After changing my eating habits, I started going to the gym. I would walk and try lifting weight. The issue slowly became an obsession with keeping this strict diet and trying to go to the gym most days. There would be days I would feel gulity for not going to the gym or craving a cookie after eating my meals. </h3>
-
+            <br>
     <h3 class="has-text-weight-medium has-text-centered">&nbsp;&nbsp;Thankfully, I was spekaing to my therapist about this unhealthy relationship with food and exercise. She helped me realize that I was being too hard on myself and that even small progress is good. I was so focused on my health that I was not enjoying the food I was eating or the time I was spending at the gym. At that moment I realized, mental health is just as important as physical health when changing your lifestyle. </h3>
        <br>
                 <img src="health.png" alt="Mental health" class="center">
