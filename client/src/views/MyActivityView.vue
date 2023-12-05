@@ -5,13 +5,13 @@
             <div class="container">
                 <div class="columns has-text-white">
                     <div class="column">
-                        <p class="title is-1 has-text-dark"> Plan: </p>
+                        <p class="red title is-1"> Plan: </p>
                         <p class="title is-5 has-text-dark">&nbsp;Let's see what the right plan is for you, ${username}! </p>
                         <!-- Add an image later, try to make it larger-->
 
-                        <p class="title is-6 has-text-dark" > &nbsp;I want to start off and say excerising at least for 30 minutes can truly make a difference in our lives! Excerises at least once a day don't have to mean going to the gym everyday. Some excerise ideas can include: </p>
+                        <p class="title is-6 has-text-dark" > &nbsp;I want to start off and say exercising at least for 30 minutes can truly make a difference in our lives! Exercises at least once a day don't have to mean going to the gym everyday. Some exercise ideas can include: </p>
 
-                        &nbsp;
+                        <div class="content is-small">
                         <ol class="title is-6 has-text-dark">
                             <li>Yoga</li>
                             <li>Pilates</li>
@@ -19,41 +19,43 @@
                             <li>Lifting weights</li>
                             <li>Walking/Running</li>
                         </ol>
-                        &nbsp;
+                        </div>
                     
                         <div class="field">
-                            <label class="label has-text-dark">Excerise</label>
+                            <label class="label has-text-dark">Exercise</label>
                             <div class="control">
                                 <div class="select is-danger">
-                                    <select>
-                                        <option>Select Excerise</option>
-                                        <option>Yoga</option>
-                                        <option>Pilates</option>
-                                        <option>Karate</option>
-                                        <option>Lifting weights</option>
-                                        <option>Walking</option>
-                                        <option>Running</option>
-                                        <option>Other</option>
-                                    </select>
+                                 <select>
+                                    <option>Select Exercise</option>
+                                     <option>Yoga</option>
+                                     <option>Pilates</option>
+                                     <option>Karate</option>
+                                     <option>Lifting weights</option>
+                                    <option>Walking</option>
+                                     <option>Running</option>
+                                     <option>Other</option>
+                                     </select>
                                 </div>
                             </div>
                         </div>
                         <div class="field">
-                            <label class="label has-text-dark">Time</label>
-                            <div class="control has-icons-left has-icons-right">
-                                <input class="input is-success is-danger" type="text" placeholder="Text input" value="bulma">
-                                <span class="icon is-small is-left">
-                                    <i class="far fa-clock"></i>
-                                </span>
-                                <!--If they have less than 30 minutes, create a new message saying "Almost there!" -->
-                                <span class="icon is-small is-right">
-                                    <i class="fas fa-check"></i>
-                                </span>
-                            </div>
-                            <p class="help is-success is-danger">Great Job!</p>
-                        </div>
-
-                    
+                                <label class="label has-text-dark">Time</label>
+                                <div class="control">
+                                    <div class="select is-danger">
+                                          <select>
+                                            <option>Select Time</option>
+                                            <option>5 min</option>
+                                            <option>10 min</option>
+                                            <option>15 min</option>
+                                            <option>30 min</option>
+                                            <option>45 min</option>
+                                            <option>1 hour</option>
+                                            <option>More than 1 hour</option>
+                                        </select>
+                                    </div>
+                                     <p class="help is-success is-danger">Great Job!</p>
+                                </div>
+                            </div>                
                         <div class="field">
                             <label class="label has-text-dark">Message</label>
                             <div class="control">
