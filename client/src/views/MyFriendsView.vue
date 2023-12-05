@@ -1,36 +1,75 @@
 <template>
     <div class="friends">
-        <h2>
-            This is my friends page
-        </h2>
-        <div class="card">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        <br>
+        <br>
+      <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
         </figure>
       </div>
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <p class="title is-4">John Smith</p>
-            <p class="subtitle is-6">@johnsmith</p>
-          </div>
-        </div>
-
+      <div class="media-content">
         <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a href="#">#css</a> <a href="#">#responsive</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          <p>
+            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+            <br>
+            I start my fitness journey today!
+          </p>
         </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item" aria-label="like">
+              <span class="icon is-small">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+              </span>
+            </a> 
+            <a class="level-item" aria-label="reply">
+                <span class="icon is-small">
+                  <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+              </a>
+          </div>
+        </nav>
+        <input class="input is-danger" type="text" placeholder="Danger input">
       </div>
-    </div>
+    </article>
+  </div>
+  <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Angela Oaks</strong> <small>@angieOaks</small> <small>31m</small>
+            <br>
+            Let's see how my exercise will go today!
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item" aria-label="reply">
+              <span class="icon is-small">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+              </span>
+            </a>
+          
+            <a class="level-item" aria-label="like">
+              <span class="icon is-small">
+                <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        </nav>
+        <input class="input is-danger" type="text" placeholder="Danger input">
+      </div>
+    </article>
+  </div>
+
     </div>
 </template>
 
@@ -40,6 +79,11 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+    }
+    .card{  
+        margin: 0 auto;
+        width: 50%;
+
     }
 }
 </style>
