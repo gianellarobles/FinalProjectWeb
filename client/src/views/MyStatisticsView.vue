@@ -1,6 +1,7 @@
 <template>
     <div class="statistics">
         <h2>
+          <br>
             This is my statistics page
         </h2>
         <article class="message is-primary">
