@@ -20,9 +20,11 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
-header {
+@media (min-width: 640px) {
+  header {
   line-height: 3.5;
   max-height: 120vh;
+}
 }
 
 </style>
