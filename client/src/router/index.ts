@@ -1,5 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, type NavigationGuardNext, type RouteLocationNormalized} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import LoginView from '../views/LoginView.vue'
+import { getSession } from '@/model/session';
 
 
 const router = createRouter({
@@ -20,7 +22,7 @@ const router = createRouter({
       name: 'plan',
       component: () => import('../views/PlanView.vue')
     },
-     {
+    {
       path: '/activity',
       name: 'activity',
       // route level code-splitting
@@ -59,6 +61,20 @@ const router = createRouter({
       component: () => import('../views/SignupView.vue')
     }
   ]
-})
+});
+
+function requireLogin(to: RouteLocationNormalized, from: RouteLocationNormalized, next: NavigationGuardNext) {
+  
+  const session = getSession();
+  if(!session.user){
+    session.redirectUrl = to.fullPath;
+    next('/login');
+  }else{
+    next();
+  }
+}
+
 
 export default router
+
+

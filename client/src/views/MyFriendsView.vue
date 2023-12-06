@@ -1,3 +1,23 @@
+<script setup lang="ts">
+import { ref, toDisplayString } from 'vue'
+
+var currentLikes = ref(0)
+var comment = ref('')
+
+var addLike = () => {
+  currentLikes.value++
+}
+var print = () => {
+  console.log(currentLikes.value) 
+}
+var addComment = () => {
+  console.log(comment.value)
+}
+
+
+</script>
+
+  
 <template>
     <div class="friends">
         <br>
@@ -52,21 +72,32 @@
         </div>
         <nav class="level is-mobile">
           <div class="level-left">
+             &nbsp;&nbsp;
             <a class="level-item" aria-label="like">
               <span class="icon is-small">
-                <i class="fas fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-heart" @click="addLike" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
               </span>
-              &nbsp;<small>10</small> 
             </a> 
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
             <a class="level-item" aria-label="reply">
                 <span class="icon is-small">
-                  <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+            <i class="fas fa-thumbs-down" @click="addLike" aria-hidden="true"></i> &nbsp;{{ currentLikes }}
+          
                 </span>
-                &nbsp;<small>13</small> 
               </a>
           </div>
-        </nav>
-        <input class="input is-danger" type="text" placeholder="Leave a comment">
+          </nav>
+            <div class="field is-grouped">
+              <p class="control is-expanded">
+                <input class="input is-danger" type="comment" placeholder="Leave a comment">
+              </p>
+              <p class="control">
+                <a class="button is-danger has-text-weight-semibold" @click="addComment">
+                  Comment
+                  </a>
+                  {{ comment }}
+              </p>
+            </div>
       </div>
     </article>
   </div>
@@ -87,33 +118,40 @@
         </div>
         <nav class="level is-mobile">
           <div class="level-left">
+            &nbsp;&nbsp;
             <a class="level-item" aria-label="reply">
               <span class="icon is-small">
-                <i class="fas fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-heart" @click="addLike" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
               </span>
-              &nbsp;<small>20</small> 
             </a>
-          
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
             <a class="level-item" aria-label="like">
               <span class="icon is-small">
-                <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fas fa-thumbs-down" @click="addLike" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
               </span>
-              &nbsp;<small>15</small> 
             </a>
           </div>
         </nav>
-        <input class="input is-danger" type="text" placeholder="Leave a comment">
+             <div class="field is-grouped">
+            <p class="control is-expanded">
+              <input class="input is-danger" type="comment" placeholder="Leave a comment">
+            </p>
+            <p class="control">
+              <a class="button is-danger has-text-weight-semibold">
+                Comment
+                </a>
+            </p>
+          </div>
       </div>
     </article>
   </div>
-
     </div>
 </template>
 
 <style>
 @media (min-width: 640px) {
     .friends {
-        min-height: 100vh;
+        min-height: auto;
         display: flex;
         flex-direction: column;
     }
