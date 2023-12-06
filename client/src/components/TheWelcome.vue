@@ -14,6 +14,7 @@ import SearchIcon from './icons/IconSearch.vue'
 
 <h2 class="is-size-3 has-text-weight-medium has-text-centered">Here is a quick tour of the website</h2>
 <br>
+<br>
 <WelcomeItem>
     <template #icon>
       <AdminIcon />

@@ -47,7 +47,7 @@ img{
 }
 @media (min-width: 640px) {
     .plan {
-        min-height: 100vh;
+        min-height: 130vh;
         display: flex;
         flex-direction: column;
     }

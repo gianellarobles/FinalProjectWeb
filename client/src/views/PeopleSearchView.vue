@@ -3,10 +3,10 @@
  <div class="search">
       <br>
       <br>
-    <p><strong>Enter Username</strong></p>
+    <p><strong>Search for Friends</strong></p>
      <div class="field is-grouped">
           <p class="control is-expanded has-icons-left has-icons-right">
-            <input class="input is-danger" type="Username" placeholder="Username">
+            <input class="input is-danger" type="Username" placeholder="Enter Username">
             <span class="icon is-small is-left">
               <i class="fas fa-search"></i>
             </span>
@@ -23,22 +23,34 @@
           <div class="media-left">
             <figure class="image is-96x96">
               <img class="is-rounded" src="Cute-PNG-Pic.png" alt="Image">
+              <br>
+              <p class="control">
+              &nbsp;&nbsp;&nbsp;<a class="button is-danger is-size-7 has-text-weight-bold">
+              Request
+                  </a>
+                  <br>
+              </p>
             </figure>
           </div>
           <div class="media-content">
             <div class="content">
               <p>
                 <strong>Angela Oaks</strong> <small>@angieOaks</small>
-                <br>
-                Hi, I am Angie and I am looking for a workout buddy!
+                <br>     
+               Hi, I am Angie and I am looking for a workout buddy!
         
                <h4 class="is-size-6 has-text-weight-semibold">Status: 
                 <span class="icon has-text-warning">
                     <i class="fas fa-smile-beam"></i>
                  </span> 
+                 
                 </h4> 
            </p>
+           
         </div>
+        <br>
+        <br>
+        <br>
           </div>
         </article>
       </div>
@@ -47,6 +59,13 @@
               <div class="media-left">
                 <figure class="image is-96x96">
                   <img class="is-rounded" src="E2yj-NxXIAE1T3h.png" alt="Image">
+                  <br>
+                <p class="control">
+                &nbsp;&nbsp;&nbsp;<a class="button is-danger is-size-7 has-text-weight-bold">
+                Request
+                    </a>
+                    <br>
+                </p>
                 </figure>
               </div>
               <div class="media-content">
@@ -58,11 +77,13 @@
         
                    <h4 class="is-size-6 has-text-weight-semibold">Status: 
                     <span class="icon has-text-warning">
-                        <i class="far fa-meh-rolling-eyes"></i>
+                      <i class="fas fa-meh-rolling-eyes"></i>
                      </span> 
                     </h4> 
                </p>
             </div>
+            <br>
+            <br>
               </div>
             </article>
         </div>

@@ -9,7 +9,7 @@
             <img class="is-rounded" src="Cute-PNG-Pic.png" alt="Image">
             <br>
            <p class="control">
-            &nbsp;<a class="button is-danger is-size- has-text-weight-bold">
+            &nbsp;<a class="button is-danger is-size-6 has-text-weight-bold">
             Edit Profile
                 </a>
             </p>
