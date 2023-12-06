@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
     <div class="activity">
     
@@ -6,8 +10,7 @@
                 <div class="columns has-text-white">
                     <div class="column">
                         <p class="red title is-1"> Plan: </p>
-                        <p class="title is-5 has-text-dark">&nbsp;Let's see what the right plan is for you, ${username}! </p>
-                        <!-- Add an image later, try to make it larger-->
+                        <p class="title is-5 has-text-dark">&nbsp;Let's see what the right plan is for you, </p> 
 
                         <p class="title is-6 has-text-dark" > &nbsp;I want to start off and say exercising at least for 30 minutes can truly make a difference in our lives! Exercises at least once a day don't have to mean going to the gym everyday. Some exercise ideas can include: </p>
 
