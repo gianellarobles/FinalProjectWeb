@@ -93,7 +93,7 @@
 <style>
 @media (min-width: 640px) {
     .search {
-        min-height: 120vh;
+        min-height: auto;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
