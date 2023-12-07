@@ -28,25 +28,30 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/MyActivityView.vue')
+      component: () => import('../views/MyActivityView.vue'),
+      beforeEnter: requireLogin,
     },
     {
       path: '/statistics',
       name: 'statistics',
 
-      component: () => import('../views/MyStatisticsView.vue')
+      component: () => import('../views/MyStatisticsView.vue'),
+      beforeEnter: requireLogin,
+
     },
     {
       path: '/friends',
       name: 'friends',
 
-      component: () => import('../views/MyFriendsView.vue')
+      component: () => import('../views/MyFriendsView.vue'),
+      beforeEnter: requireLogin,
     },
     {
       path: '/search',
       name: 'search',
 
-      component: () => import('../views/PeopleSearchView.vue')
+      component: () => import('../views/PeopleSearchView.vue'),
+      beforeEnter: requireLogin,
     },
     {
       path: '/login',
@@ -68,7 +73,7 @@ function requireLogin(to: RouteLocationNormalized, from: RouteLocationNormalized
   const session = getSession();
   if(!session.user){
     session.redirectUrl = to.fullPath;
-    next('/login');
+    next('/plan');
   }else{
     next();
   }
