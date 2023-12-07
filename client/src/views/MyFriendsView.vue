@@ -1,18 +1,7 @@
 <script setup lang="ts">
-import { ref, toDisplayString } from 'vue'
+import { ref, toDisplayString } from 'vue';
 
-var currentLikes = ref(0)
-var comment = ref('')
-
-var addLike = () => {
-  currentLikes.value++
-}
-var print = () => {
-  console.log(currentLikes.value) 
-}
-var addComment = () => {
-  console.log(comment.value)
-}
+const currentLikes = ref(0);
 
 
 </script>
@@ -50,8 +39,7 @@ var addComment = () => {
             <strong>Status: <span class="icon has-text-warning">
                       <i class="fas fa-smile-beam"></i>
                    </span> </strong>
-          </div>
-          <br>
+    </div>
         </div>
       </article>
     </div>
@@ -75,13 +63,14 @@ var addComment = () => {
              &nbsp;&nbsp;
             <a class="level-item" aria-label="like">
               <span class="icon is-small">
-                <i class="fas fa-heart" @click="addLike" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
+                <i class="fas fa-heart" @click="currentLikes++" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
               </span>
             </a> 
             &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
             <a class="level-item" aria-label="reply">
                 <span class="icon is-small">
-            <i class="fas fa-thumbs-down" @click="addLike" aria-hidden="true"></i> &nbsp;{{ currentLikes }}
+      <!--    <i class="fas fa-thumbs-down" @click="addLike" aria-hidden="true"></i> &nbsp;{{ currentLikes }}
+      -->      
           
                 </span>
               </a>
@@ -92,10 +81,10 @@ var addComment = () => {
                 <input class="input is-danger" type="comment" placeholder="Leave a comment">
               </p>
               <p class="control">
-                <a class="button is-danger has-text-weight-semibold" @click="addComment">
+                <a class="button is-danger has-text-weight-semibold" @click="">
                   Comment
                   </a>
-                  {{ comment }}
+           <!--      {{ comment }} -->  
               </p>
             </div>
       </div>
@@ -121,13 +110,13 @@ var addComment = () => {
             &nbsp;&nbsp;
             <a class="level-item" aria-label="reply">
               <span class="icon is-small">
-                <i class="fas fa-heart" @click="addLike" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
+             <!--   <i class="fas fa-heart" @click="addLike" aria-hidden="true"></i>&nbsp;{{ currentLikes }} -->  
               </span>
             </a>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
             <a class="level-item" aria-label="like">
               <span class="icon is-small">
-                <i class="fas fa-thumbs-down" @click="addLike" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
+              <!--  <i class="fas fa-thumbs-down" @click="addLike" aria-hidden="true"></i>&nbsp;{{ currentLikes }} -->
               </span>
             </a>
           </div>
