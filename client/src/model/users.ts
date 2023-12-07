@@ -5,22 +5,11 @@ import { api } from "./session";
 
 export interface User {
   id?: number,
-  firstName: string,
-  lastName: string,
+  username: string,
+  name: string,
   email: string,
   password: string,
-  role: "admin" | "user",
-  token?: string,
-  address?: {
-    address: string,
-    city: string,
-    state: string,
-    postalCode: string,
-    coordinates: {
-      lat: number,
-      lng: number,
-    },
-  },
+  role: "admin" | "user"
 }
 
 export function getUsers(): Promise< User[]> {
@@ -30,4 +19,8 @@ export function getUsers(): Promise< User[]> {
 export async function getUserByEmail(email: string): Promise<User | undefined> {
   const users = await getUsers();
   return users.find( x => x.email === email );
+}
+export async function getUserById(id: number): Promise<User | undefined> {
+  const users = await getUsers();
+  return users.find( x => x.id === id );
 }
