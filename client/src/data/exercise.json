@@ -1,0 +1,34 @@
+{
+    "entry": [
+        {
+            "id": 1,
+            "exerciseType": "yoga",
+            "time": 30,
+            "description": "yoga for beginners",
+            "again": true
+
+        },
+        {
+            "id": 2,
+            "exerciseType": "running",
+            "time": 45,
+            "description": "running the track",
+            "again": false
+        },
+        {
+            "id": 3,
+            "exerciseType": "weight lifting",
+            "time": 60,
+            "description": "lifting weights of 100",
+            "again": true
+        },
+        {
+            "id": 4,
+            "exerciseType": "other",
+            "time": 30,
+            "description": "swimming", 
+            "again": true
+        }
+       
+    ]
+}
