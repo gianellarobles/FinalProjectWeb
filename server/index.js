@@ -4,6 +4,8 @@ const path = require('path');
 const express = require('express');
 const userController = require('./controllers/users');
 const activityController = require('./controllers/activity');
+
+//needs to add a parseAuthorizationToken functtion from the middleware folder into the authorization.js file 
 const app = express();
 
 const PORT = 3000;
