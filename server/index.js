@@ -1,6 +1,9 @@
 // express.js
 
+const path = require('path');
 const express = require('express');
+const userController = require('./controllers/users');
+const activityController = require('./controllers/activity');
 const app = express();
 
 const PORT = 3000;
