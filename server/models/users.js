@@ -71,7 +71,7 @@ function register(values) {
  * @param {string} password
  * @returns { Promise< { user: User, token: string}> } The created user.
  */
-async function  login(email, password) {
+async function login(email, password) {
 
   const item = data.users.find(x => x.email === email);
   if(!item) {

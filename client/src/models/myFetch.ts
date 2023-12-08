@@ -1,4 +1,5 @@
 /* B"H
+    This is what is giving the error that something is wrong when logging in
 */
 
 const API_ROOT = import.meta.env.VITE_API_ROOT as string;

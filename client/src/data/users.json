@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Gianella Robles",
+            "email": "gianellarobles@gmail.com",
+            "username": "gianella363",
+            "password": "gianella",
+            "role": "admin"
+        }
+    ]
+}

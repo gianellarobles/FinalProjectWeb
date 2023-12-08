@@ -1,5 +1,5 @@
-import { type Entry } from "@/model/activity";
-import { type User } from "@/model/users";
+import { type Entry } from "@/models/activity";
+import { type User } from "@/models/users";
 import { computed, reactive } from "vue";
 import { api } from "./session";
 

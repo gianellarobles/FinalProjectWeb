@@ -1,9 +1,11 @@
 <script setup lang="ts">
-
+import { getSession, useLogin } from '../models/session';
+import { signIn } from '@/models/users';
 
 </script>
 
 <template>
+  
     <div class="login">
       <br>
       <br>
@@ -22,7 +24,7 @@
      <p><strong>Username</strong></p>
              <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input is-danger" type="Username" placeholder="Username">
+                  <input class="input is-danger" type="Username" placeholder="Username" >
                   <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                   </span>
@@ -31,7 +33,7 @@
       <p><strong>Password</strong></p>
              <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input is-danger" type="password" placeholder="Password">
+                  <input class="input is-danger" type="password" placeholder="Password" >
                   <span class="icon is-small is-left">
                     <i class="fas fa-lock"></i>
                   </span>

@@ -4,7 +4,7 @@
 import { api } from './session';
 
 export interface User {
-  id?: number,
+  id :number,
   username: string,
   name: string,
   email: string,
@@ -30,7 +30,16 @@ export async function getUserByUsername(username: string): Promise<User | undefi
   return users.find( x => x.username === username );
 }
 
-export async function createUser(user: User): Promise<User> {
+export async function createUser(user: string, password: string): Promise<User> {
   return api("users", { method: "POST", body: JSON.stringify(user) });
 }
 
+export function signIn(username: string, password: string) {
+    return api(`users/${username}`, {}, 'PATCH').then(user => {
+        if (user && user.password === password) {
+            return user;
+        } else {
+            return false;
+        }
+    })
+}

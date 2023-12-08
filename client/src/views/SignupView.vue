@@ -1,3 +1,17 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const username = ref('')
+const password = ref('')
+
+const signup = () => {
+
+  console.log(username, password)
+}
+
+
+</script>
+
 <template>
     <div class="signup">
           <br>
@@ -20,15 +34,12 @@
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
-             <span class="icon is-small is-right">
-                      <i class="fas fa-check"></i>
-                    </span>
           </p>
         </div>
            <p><strong>Create username</strong></p>
              <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input is-danger" type="username" placeholder="Username">
+                  <input class="input is-danger" type="username" placeholder="Username" v-model="username">
                   <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                   </span>
@@ -50,7 +61,7 @@
             <p><strong>Enter password</strong></p>
         <div class="field">
           <p class="control has-icons-left">
-            <input class="input is-danger" type="password" placeholder="Password">
+            <input class="input is-danger" type="password" placeholder="Password" v-model="password">
             <span class="icon is-small is-left">
               <i class="fas fa-lock"></i>
             </span>
@@ -70,15 +81,19 @@
             </div>
             <br>
              <div class="buttons is-centered">                          
-         <a class="button is-danger" >
+         <a class="button is-danger" @click="signup">
            <strong>Create Account</strong>
             </a>
           </div> 
-       
+          
+          {{ username }}
+          {{ password }}
+      
     </div>
 </template>
 
 <style>
+
 @media (min-width: 640px) {
     .signup {
         min-height: 120vh;
@@ -87,5 +102,6 @@
         margin: 0 auto;
         width: 50%
     }
+
 }
 </style>

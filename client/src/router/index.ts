@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, type NavigationGuardNext, type RouteLocationNormalized} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
-import { getSession } from '@/model/session';
+import { getSession } from '@/models/session';
 
 
 const router = createRouter({

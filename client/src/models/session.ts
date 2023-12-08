@@ -28,7 +28,7 @@ export function api(action: string, body?: unknown, method?: string, headers?: a
   }
 
   return myFetch.api(`${action}`, body, method, headers)
-    .catch(err=> showError(err))
+    .catch((err: any)=> showError(err))
     .finally(()=> session.loading--);
 }
 
@@ -46,8 +46,8 @@ export function useLogin(){
   const router = useRouter();
 
   return {
-    async login(email: string, password: string): Promise< User | null> {
-      const response = await api("users/login", { email, password });
+    async login(username: string, password: string): Promise< User | null> {
+      const response = await api("users/login", { username, password });
 
       session.user = response.user;
       session.token = response.token;
