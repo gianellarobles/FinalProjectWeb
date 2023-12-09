@@ -94,7 +94,7 @@ const currentLikes = ref(0);
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/Cute-PNG-Pic.png" alt="Image">
+          <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/src/views/MyFriendsView.vue?vue&type=script&setup=true&lang.ts" alt="Image">
         </figure>
       </div>
       <div class="media-content">
