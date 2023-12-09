@@ -15,7 +15,7 @@ const currentLikes = ref(0);
       <article class="media">
         <div class="media-left">
           <figure class="image is-128x128">
-            <img class="is-rounded" src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/Cute-PNG-Pic.png" alt="Image">
+            <img class="is-rounded" src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/src/Cute-PNG-Pic.png" alt="Image">
             <br>
            <p class="control">
             &nbsp;<a class="button is-danger is-size-6 has-text-weight-bold">
@@ -47,7 +47,7 @@ const currentLikes = ref(0);
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/E2yj-NxXIAE1T3h.png" alt="Image">
+          <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/src/E2yj-NxXIAE1T3h.png" alt="Image">
         </figure>
       </div>
       <div class="media-content">
@@ -94,7 +94,7 @@ const currentLikes = ref(0);
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/Cute-PNG-Pic.png" alt="Image">
+          <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/src/Cute-PNG-Pic.png" alt="Image">
         </figure>
       </div>
       <div class="media-content">
