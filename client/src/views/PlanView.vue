@@ -6,7 +6,7 @@
     <h1 class="red is-size-1 has-text-weight-medium has-text-centered">Goal of the Website</h1>
     <h2 class="is-size-3 has-text-weight-medium has-text-centered">Now that you know a little about me, tell me about yourself.</h2>
     <br>
-         <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/IMG_5243.png" alt="panda" class="center">
+         <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/panda.png" alt="panda" class="center">
     
     <div class="content is-small">
     <ul>
