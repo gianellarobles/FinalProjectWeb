@@ -7,7 +7,7 @@
    <h2 class="is-size-4 has-text-centered">Hi, my name is Gianella and I am the creator of Healing Fitness.</h2>
    <h3 class="has-text-weight-medium has-text-centered">The reason I decided to launch this website was to encourage a positive take on fitness. </h3>
      <br>
-        <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/IMG_1713.png" alt="Gianella" class="center">
+        <img src="/Users/gianellarobles/documents/GitHub/FinalProjectWeb/client/IMG_1713.png" alt="Gianella" class="center">
          <figcaption class="has-text-centered is-italic">
           Figure 1: Me eating food in New Paltz, NY
         </figcaption>
