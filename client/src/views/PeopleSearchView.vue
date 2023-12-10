@@ -22,7 +22,7 @@
         <article class="media">
           <div class="media-left">
             <figure class="image is-96x96">
-              <img class="is-rounded" src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/src/Cute-PNG-Pic.png" alt="Image">
+              <img class="is-rounded" src="/src/Cute-PNG-Pic.png" alt="Image">
               <br>
               <p class="control">
               &nbsp;&nbsp;&nbsp;<a class="button is-danger is-size-7 has-text-weight-bold">
@@ -58,7 +58,7 @@
             <article class="media">
               <div class="media-left">
                 <figure class="image is-96x96">
-                  <img class="is-rounded" src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/src/E2yj-NxXIAE1T3h.png" alt="Image">
+                  <img class="is-rounded" src="/src/E2yj-NxXIAE1T3h.png" alt="Image">
                   <br>
                 <p class="control">
                 &nbsp;&nbsp;&nbsp;<a class="button is-danger is-size-7 has-text-weight-bold">

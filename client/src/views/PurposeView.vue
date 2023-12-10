@@ -17,7 +17,7 @@
     <br>
     <h3 class="has-text-weight-medium has-text-centered">&nbsp;&nbsp;Some changes I made was cutting out gluten and lowering my carb intake. Additionally, I started looking at ingredients and the nutrition fact label to all my foods. I noticed that certain foods had high sugar and high carbs so I tried to limit my amount for both. </h3>
      <br>
-            <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/src/68764250488__504B42B1-F9B5-4793-8358-102DDCE5C226.png" alt="Food" class="center">
+            <img src="/src/68764250488__504B42B1-F9B5-4793-8358-102DDCE5C226.png" alt="Food" class="center">
           <figcaption class="has-text-centered is-italic">
               Figure 2: Starting my new diet with vegetables and protein
             </figcaption>
@@ -26,7 +26,7 @@
             <br>
     <h3 class="has-text-weight-medium has-text-centered">&nbsp;&nbsp;Thankfully, I was spekaing to my therapist about this unhealthy relationship with food and exercise. She helped me realize that I was being too hard on myself and that even small progress is good. I was so focused on my health that I was not enjoying the food I was eating or the time I was spending at the gym. At that moment I realized, mental health is just as important as physical health when changing your lifestyle. </h3>
        <br>
-                <img src="/Users/gianellarobles/Documents/GitHub/FinalProjectWeb/client/src/health.png" alt="Mental health" class="center">
+                <img src="/src/health.png" alt="Mental health" class="center">
                 <figcaption class="has-text-centered is-italic">
                   Figure 3: The motto of Healing Fitness
                 </figcaption>
