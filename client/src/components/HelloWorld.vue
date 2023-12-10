@@ -25,7 +25,7 @@ import { RouterLink } from "vue-router";
                                       <div class="navbar-item has-dropdown is-hoverable">
                                           <a class="navbar-link" >
                                             <i class="fas fa-book"></i>
-                                           Admin
+                                           &nbsp;Admin
                                           </a>
                                           <div class="navbar-dropdown">
                                              <RouterLink to="/purpose"><a class="navbar-item" >
@@ -44,17 +44,17 @@ import { RouterLink } from "vue-router";
                                    <a class="navbar-item" >
                             <RouterLink to="/statistics">
                                   <i class="fas fa-chart-line"></i>
-                                  Statistics
+                                  &nbsp;Statistics
                               </RouterLink></a>
                               <a class="navbar-item">
                              <RouterLink to="/friends"> 
                                   <i class="fas fa-users"></i>
-                                  Friends Activity
+                                &nbsp;Friends Activity
                               </RouterLink></a>
                             <a class="navbar-item">
                                 <RouterLink to="/search"> 
                                   <i class="fas fa-search"></i>
-                                  People Search
+                                  &nbsp;People Search
                              </RouterLink> </a>
 
                           </div>
@@ -65,6 +65,7 @@ import { RouterLink } from "vue-router";
                                     <RouterLink to="/signup"> <a class="button is-danger" href="/signup">
                                           <strong>Sign Up</strong>
                                       </a></RouterLink>
+                                      &nbsp;
                                      <RouterLink to="/login"><a class="button is-light" href="/login">
                                          <strong>Log in</strong>
                                       </a></RouterLink>
