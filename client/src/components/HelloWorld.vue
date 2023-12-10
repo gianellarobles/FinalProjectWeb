@@ -10,8 +10,11 @@ import { RouterLink } from "vue-router";
                       <div class ="navbar-brand">
                       
                        
-                         <RouterLink to="/"><a class = "navbar-item" href="/"><i class="fas fa-hand-holding-heart"></i>
-                        </a> </RouterLink> 
+                         <RouterLink to="/"><a class = "navbar-item" >
+                            <i class="fas fa-hand-holding-heart">
+
+                            </i>
+                        </a></RouterLink> 
                 
                           <a role ="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
                               <span aria-hidden="true"></span>
