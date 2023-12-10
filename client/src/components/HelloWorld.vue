@@ -8,8 +8,9 @@ import { RouterLink } from "vue-router";
     
 <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                       <div class ="navbar-brand">
+                      
                           <a class = "navbar-item" href="/">
-                        <i class="fas fa-hand-holding-heart" ></i>
+                           <RouterLink to="/"><i class="fas fa-hand-holding-heart" ></i></RouterLink>
                           </a>
                 
                           <a role ="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
@@ -27,43 +28,44 @@ import { RouterLink } from "vue-router";
                                            Admin &nbsp;
                                           </a>
                                           <div class="navbar-dropdown">
-                                              <a class="navbar-item" href="/purpose">
-                                                  Purpose
-                                              </a>
-                                              <a class="navbar-item" href="/plan">
-                                                  Plan
-                                              </a>
+                                             <RouterLink to="/purpose"><a class="navbar-item" href="/purpose">
+                                                      Purpose
+                                                  </a></RouterLink>
+                                                <RouterLink to="/plan"><a class="navbar-item" href="/plan">
+                                                        Plan
+                                                    </a></RouterLink>
                                           </div>
                                       </div>
                             
-                              <a class="navbar-item" href="/activity">
-                              <i class="fas fa-running"> &nbsp;</i>
-                                  My Activity
-                              </a>
-                              <a class="navbar-item" href="/statistics">
+                            <RouterLink to="/activity"> <a class="navbar-item" href="/activity">
+                                  <i class="fas fa-running"> &nbsp;</i>
+                                      My Activity
+                                  </a></RouterLink>
+                            <RouterLink to="/statistics"> <a class="navbar-item" href="/statistics">
                                   <i class="fas fa-chart-line"> &nbsp;</i>
                                   Statistics
-                              </a>
-                              <a class="navbar-item" href="/friends">
+                              </a></RouterLink>
+                             <RouterLink to="/friends"> <a class="navbar-item" href="/friends">
                                   <i class="fas fa-users">&nbsp;</i>
                                   Friends Activity
-                              </a>
-                              <a class="navbar-item" href="/search">
+                              </a></RouterLink>
+                             <RouterLink to="/search"> <a class="navbar-item" href="/search">
                                   <i class="fas fa-search"> &nbsp;</i>
                                   People Search
-                              </a>
+                              </a></RouterLink>
 
                           </div>
 
                           <div class="navbar-end">
                               <div class="navbar-item">
                                   <div class="buttons">
-                                      <a class="button is-danger" href="/signup">
+                                    <RouterLink to="/signup"> <a class="button is-danger" href="/signup">
                                           <strong>Sign Up</strong>
-                                      </a>
-                                      <a class="button is-light" href="/login">
+                                      </a></RouterLink>
+                                     <RouterLink to="/login"><a class="button is-light" href="/login">
                                          <strong>Log in</strong>
-                                      </a>
+                                      </a></RouterLink>
+                                      
                                   </div>
                               </div>
                          </div>
