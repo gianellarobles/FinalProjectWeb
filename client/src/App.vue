@@ -17,7 +17,9 @@ const session = getSession();
     </div>
   </header>
 
-  <RouterView />
+  <RouterView /> 
+
+  <RouterLink to="/login"></RouterLink>
 
 </template>
 
