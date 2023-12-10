@@ -9,13 +9,9 @@ import { RouterLink } from "vue-router";
 <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                       <div class ="navbar-brand">
                       
-                       
-                         <RouterLink to="/"><a class = "navbar-item" >
-                            <i class="fas fa-hand-holding-heart">
-
-                            </i>
-                        </a></RouterLink> 
-                
+                    <a class ="navbar-item" href="/">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </a>
                           <a role ="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
                               <span aria-hidden="true"></span>
                               <span aria-hidden="true"></span>
@@ -45,10 +41,10 @@ import { RouterLink } from "vue-router";
                                      &nbsp; My Activity
                                  </a> </RouterLink> 
                                    
-                            <RouterLink to="/statistics"><a class="navbar-item" >
+                            <RouterLink class= "navbar-item" to="/statistics">
                                   <i class="fas fa-chart-line"></i>
                                   &nbsp;Statistics
-                             </a> </RouterLink>
+                           </RouterLink>
                               
                              <RouterLink to="/friends"> <a class="navbar-item">
                                   <i class="fas fa-users"></i>
