@@ -9,9 +9,9 @@ import { RouterLink } from "vue-router";
 <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                       <div class ="navbar-brand">
                       
-                       <a class = "navbar-item" href="/">
-                         <RouterLink to="/"><i class="fas fa-hand-holding-heart"></i>
-                         </RouterLink> </a>
+                       
+                         <RouterLink to="/"><a class = "navbar-item" href="/"><i class="fas fa-hand-holding-heart"></i>
+                        </a> </RouterLink> 
                 
                           <a role ="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
                               <span aria-hidden="true"></span>
@@ -36,26 +36,26 @@ import { RouterLink } from "vue-router";
                                                     </a></RouterLink>
                                           </div>
                                       </div>
-                            <a class="navbar-item">
-                            <RouterLink to="/activity"> 
+                            
+                            <RouterLink to="/activity"> <a class="navbar-item">
                                   <i class="fas fa-running"> </i>
                                      &nbsp; My Activity
-                                  </RouterLink> </a>
-                                   <a class="navbar-item" >
-                            <RouterLink to="/statistics">
+                                 </a> </RouterLink> 
+                                   
+                            <RouterLink to="/statistics"><a class="navbar-item" >
                                   <i class="fas fa-chart-line"></i>
                                   &nbsp;Statistics
-                              </RouterLink></a>
-                              <a class="navbar-item">
-                             <RouterLink to="/friends"> 
+                             </a> </RouterLink>
+                              
+                             <RouterLink to="/friends"> <a class="navbar-item">
                                   <i class="fas fa-users"></i>
                                 &nbsp;Friends Activity
-                              </RouterLink></a>
-                            <a class="navbar-item">
-                                <RouterLink to="/search"> 
+                              </a></RouterLink>
+                            
+                                <RouterLink to="/search"> <a class="navbar-item">
                                   <i class="fas fa-search"></i>
                                   &nbsp;People Search
-                             </RouterLink> </a>
+                            </a> </RouterLink> 
 
                           </div>
 
