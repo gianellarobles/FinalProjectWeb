@@ -36,39 +36,38 @@ import { RouterLink } from "vue-router";
                                           </div>
                                       </div>
                             
-                            <RouterLink to="/activity"> <a class="navbar-item">
+                            <RouterLink class ="navbar-item" to="/activity">
                                   <i class="fas fa-running"> </i>
                                      &nbsp; My Activity
-                                 </a> </RouterLink> 
+                                 </RouterLink> 
                                    
                             <RouterLink class= "navbar-item" to="/statistics">
                                   <i class="fas fa-chart-line"></i>
                                   &nbsp;Statistics
                            </RouterLink>
                               
-                             <RouterLink to="/friends"> <a class="navbar-item">
+                             <RouterLink class = "navbar-item" to="/friends"> 
                                   <i class="fas fa-users"></i>
                                 &nbsp;Friends Activity
-                              </a></RouterLink>
+                              </RouterLink>
                             
-                                <RouterLink to="/search"> <a class="navbar-item">
+                                <RouterLink class ="navbar-item" to="/search"> 
                                   <i class="fas fa-search"></i>
                                   &nbsp;People Search
-                            </a> </RouterLink> 
+                           </RouterLink> 
 
                           </div>
 
                           <div class="navbar-end">
                               <div class="navbar-item">
                                   <div class="buttons">
-                                    <RouterLink to="/signup"> <a class="button is-danger" href="/signup">
+                                    <RouterLink class ="button is-danger" to="/signup"> 
                                           <strong>Sign Up</strong>
-                                      </a></RouterLink>
+                                    </RouterLink>
                                       &nbsp;
-                                     <RouterLink to="/login"><a class="button is-light" href="/login">
+                                     <RouterLink class="button is-light" to="/login">
                                          <strong>Log in</strong>
-                                      </a></RouterLink>
-                                      
+                                    </RouterLink>
                                   </div>
                               </div>
                          </div>
