@@ -63,7 +63,7 @@ const currentLikes = ref(0);
              &nbsp;&nbsp;
             <a class="level-item" aria-label="like">
               <span class="icon is-small">
-                <i class="fas fa-heart" @click="currentLikes++" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
+                <i class="fas fa-heart" @click.once ="currentLikes++" aria-hidden="true"></i>&nbsp;{{ currentLikes }}
               </span>
             </a> 
             &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
