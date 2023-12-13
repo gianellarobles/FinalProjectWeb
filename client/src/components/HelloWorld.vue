@@ -7,9 +7,6 @@ import { getSession } from "../models/session";
 
 const session = getSession();
 
-
-
-
 </script>
 
 <template> 
@@ -77,7 +74,6 @@ const session = getSession();
                                      <RouterLink class="button is-light" to="/login">
                                          <strong>Log out</strong>
                                     </RouterLink>
-                                    
                                   </div>
                                   <div class="buttons" v-else>
                                     <RouterLink class="button is-danger" to="/login">
