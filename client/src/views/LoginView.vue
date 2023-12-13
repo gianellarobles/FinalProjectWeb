@@ -1,6 +1,24 @@
 <script setup lang="ts">
 import { getSession, useLogin } from '../models/session';
 import { signIn } from '@/models/users';
+import { ref } from 'vue';
+import value from 'vue';
+
+const username = ref("");
+const password = ref("");
+const boolean = ref(false);
+
+const session = getSession()
+const { login, logout } = useLogin()
+
+const doLogin = () => {
+  login(username.value, password.value)
+}
+
+const doLogout = () => {
+  logout();
+}
+
 
 </script>
 
@@ -20,11 +38,10 @@ import { signIn } from '@/models/users';
      <span><strong>Log in</strong></span>
     </p>
     <br>
-
      <p><strong>Username</strong></p>
              <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input is-danger" type="Username" placeholder="Username" >
+                  <input class="input is-danger" type="Username" placeholder="Username" v-model.trim="username">
                   <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                   </span>
@@ -33,17 +50,18 @@ import { signIn } from '@/models/users';
       <p><strong>Password</strong></p>
              <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input is-danger" type="password" placeholder="Password" >
+                  <input class="input is-danger" type="password" placeholder="Password" v-model.trim="password">
                   <span class="icon is-small is-left">
                     <i class="fas fa-lock"></i>
-                  </span>
-                </p>
-    </div>  
-    <br> 
-     <div class="buttons is-centered">                          
+                </span>
+              </p>
+         </div>  
+       <br> 
+     <div class="buttons is-centered" >                          
        <a class="button is-danger" >
-         <strong>Sign In</strong>
+         <strong>Sign in</strong>
           </a>
+
         </div>  
    </div>
 </template>
