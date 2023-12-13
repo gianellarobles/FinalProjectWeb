@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, type NavigationGuardNext, type RouteLoc
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
 import { getSession } from '@/models/session';
+import { ref } from 'vue';
 
 
 const router = createRouter({
@@ -45,6 +46,7 @@ const router = createRouter({
 
       component: () => import('../views/MyFriendsView.vue'),
       beforeEnter: requireLogin,
+      
     },
     {
       path: '/search',
@@ -78,7 +80,6 @@ function requireLogin(to: RouteLocationNormalized, from: RouteLocationNormalized
     next();
   }
 }
-
 
 export default router
 
