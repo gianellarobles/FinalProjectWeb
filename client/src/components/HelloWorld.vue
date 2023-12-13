@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { RouterLink } from "vue-router";
+import { useLogin } from "../models/session";
+import { getSession } from "../models/session";
+
+
+const session = getSession();
+
+
+
+
 </script>
 
 <template> 
@@ -60,13 +69,19 @@ import { RouterLink } from "vue-router";
 
                           <div class="navbar-end">
                               <div class="navbar-item">
-                                  <div class="buttons">
-                                    <RouterLink class ="button is-danger" to="/signup"> 
+                                  <div class="buttons" v-if="!session.user">
+                                   <RouterLink class ="button is-danger" to="/signup"> 
                                           <strong>Sign Up</strong>
                                     </RouterLink>
                                       &nbsp;
                                      <RouterLink class="button is-light" to="/login">
-                                         <strong>Log in</strong>
+                                         <strong>Log out</strong>
+                                    </RouterLink>
+                                    
+                                  </div>
+                                  <div class="buttons" v-else>
+                                    <RouterLink class="button is-danger" to="/login">
+                                        <strong>Log out</strong>
                                     </RouterLink>
                                   </div>
                               </div>
