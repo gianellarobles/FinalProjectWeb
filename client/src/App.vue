@@ -8,17 +8,17 @@ const session = getSession();
 
 <template>
   <header>
-     
+    
     <!-- This is the logo for HealingFitness-->
     <div class="wrapper">
-  
+    
       <HelloWorld/>
   
     </div>
   </header>
-
+<Suspense>
   <RouterView /> 
-
+</Suspense>
 
 </template>
 

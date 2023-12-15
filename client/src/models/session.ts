@@ -5,6 +5,7 @@ import { useRouter } from "vue-router"
 import { useToast } from "vue-toastification";
 import * as myFetch from "./myFetch";
 import { type User, getUserByEmail } from "./users";
+import user from "../data/users.json";
 
 const toast = useToast();
 
@@ -48,6 +49,10 @@ export function useLogin(){
   return {
     async login(username: string, password: string): Promise< User | null> {
       const response = await api("users/login", { username, password });
+      if(!response.user) {
+        showError("Invalid username or password");
+        return null;
+      }
 
       session.user = response.user;
       session.token = response.token;

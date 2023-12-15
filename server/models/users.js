@@ -21,27 +21,20 @@
  * @type { {users: User[]} }
  */
 
+const { connect, ObjectId } = require('./mongo')
 const data = require("../data/users.json");
-const dbName = 'HealingFitness'
 const collectionName = 'users'
 
-const jwt = require("jsonwebtoken");
+const jwt = require('jsonwebtoken');
 const JWT_SECRET = process.env.JWT_SECRET;
 const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN;
 
-/**
- * @returns {User[]} An array of products.
- */
 
 
-function getAll() {
-  return data.users;
-}
 function search(query) {
   return data.users.filter(x => {
     return (
-      x.firstName.toLowerCase().includes(query.toLowerCase()) ||
-      x.lastName.toLowerCase().includes(query.toLowerCase()) ||
+      x.name.toLowerCase().includes(query.toLowerCase()) ||
       x.email.toLowerCase().includes(query.toLowerCase()) ||
       x.username.toLowerCase().includes(query.toLowerCase()) 
     );
@@ -71,40 +64,18 @@ function register(values) {
  * @param {string} password
  * @returns { Promise< { user: User, token: string}> } The created user.
  */
-async function login(email, password) {
-
-  const item = data.users.find(x => x.email === email);
-  if(!item) {
-    throw new Error('User not found');
+async function login(username, password) {
+  const db = await collection();
+  const user = await db.findOne({username: username, password: password})
+  console.log("user",user, username, password)
+  
+  if(!user) {
+    throw new Error('User not found or password incorrect');
   }
 
-  if(item.password !== password) {
-    throw new Error('Wrong password');
-  }
-
-  const user = { ...item, password: undefined, admin: true};
-  const token = await generateJWT(user);
-  return { user, token };
-}
-/**
- * @param {string} email
- * @param {string} password
- * @returns { Promise< { user: User, token: string}> } The created user.
- */
-async function  login(email, password) {
-
-  const item = data.users.find(x => x.email === email);
-  if(!item) {
-    throw new Error('User not found');
-  }
-
-  if(item.password !== password) {
-    throw new Error('Wrong password');
-  }
-
-  const user = { ...item, password: undefined, admin: true};
-  const token = await generateJWT(user);
-  return { user, token };
+  let userObject = { ...user, password: undefined};
+  const token = await generateJWT(userObject);
+  return { user:userObject, token };
 }
 
 /**
@@ -134,7 +105,7 @@ function remove(id) {
   data.users.splice(index, 1);
 }
 
-function generateJWT(user) {
+async function generateJWT(user) {
   return new Promise((resolve, reject) => {
     jwt.sign(user, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN } , (err, token) => {
       if(err) {
@@ -146,8 +117,8 @@ function generateJWT(user) {
   })
 }
 
-function verifyJWT(token) {
-  return new Promise((resolve, reject) => {
+async function verifyJWT(token) {
+  return await new Promise((resolve, reject) => {
     jwt.verify(token, JWT_SECRET, (err, user) => {
       if(err) {
         reject(err);
@@ -159,9 +130,9 @@ function verifyJWT(token) {
 }
 
 
-async function collection() {
-    const client = await connect()
-    return client.db(dbName).collection(collectionName)
+async function collection() { 
+    const db = await connect()
+    return db.collection(collectionName)
 }
 
 async function getUser(username) {
@@ -170,7 +141,13 @@ async function getUser(username) {
     return user
 }
 
-async function addUser(username, password) {
+async function getAll() {
+    const db = await collection();
+    const users = await db.find().toArray()
+    return users
+}
+
+async function addUser(name, username, email, password) {
     const db = await collection()
     let result = false;
     await getUser(username).then((user) => {
@@ -178,8 +155,10 @@ async function addUser(username, password) {
             //dont insert  
         } else {
             db.insertOne({
-                "username": username
-                ,"password": password
+                "username": username,
+                "password": password,
+                "name": name,
+                "email": email,
             })
             result = true;
         }

@@ -72,7 +72,7 @@ const session = getSession();
                                     </RouterLink>
                                       &nbsp;
                                      <RouterLink class="button is-light" to="/login">
-                                         <strong>Log out</strong>
+                                         <strong>Log in</strong>
                                     </RouterLink>
                                   </div>
                                   <div class="buttons" v-else>

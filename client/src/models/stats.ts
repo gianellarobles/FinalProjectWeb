@@ -9,18 +9,6 @@ export type Stats = {
     entries: Entry[]
 }
 
-const state = reactive<Stats>({
-    user: {
-        id: 0,
-        username: "",
-        name: "",
-        email: "",
-        password: "",
-        role: "user"
-    },
-    entries: []
-});
-
 export function getStats(): Promise<Stats> {
     return api("stats");
 }

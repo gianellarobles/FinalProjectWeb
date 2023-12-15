@@ -3,16 +3,19 @@ import { getSession, useLogin } from '../models/session';
 import { signIn } from '@/models/users';
 import { ref } from 'vue';
 import value from 'vue';
+import type { User } from "../models/users";
 
-const username = ref("");
-const password = ref("");
-const boolean = ref(false);
+const username = ref('');
+const password = ref('');
 
 const session = getSession()
 const { login, logout } = useLogin()
 
 const doLogin = () => {
-  login(username.value, password.value)
+  login(username.value, password.value).then((user:User | null) => {
+    username.value = '';
+    password.value = '';
+  })
 }
 
 const doLogout = () => {
@@ -28,6 +31,7 @@ const doLogout = () => {
       <br>
       <br>
       <br>
+      <div class="form">
      <h1 class="red is-size-1 has-text-weight-medium has-text-centered">Welcome Back!</h1>
            <br>
       <p class="has-text-centered">
@@ -58,11 +62,12 @@ const doLogout = () => {
          </div>  
        <br> 
      <div class="buttons is-centered" >                          
-       <a class="button is-danger" >
-         <strong>Sign in</strong>
-          </a>
-
+       <a class="button is-danger" @click="doLogin"><!--@click="doLogin"-->
+         <strong>Sign in</strong> 
+        </a>
+         
         </div>  
+        </div>
    </div>
 </template>
 

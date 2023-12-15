@@ -2,28 +2,29 @@
 */
 
 import { api } from './session';
+import { type Entry } from './activity';
 
 export interface User {
   id :number,
   username: string,
   name: string,
   email: string,
+  photo?: string,
   password: string,
   role: "admin" | "user",
+  isAdmin: boolean,
+  friends?: User[],
+  entries?: Entry[],
   token?:string
 }
 
 export function getUsers(): Promise< User[]> {
-  return api("users"); 
+  return api('users'); 
 }
 
 export async function getUserByEmail(email: string): Promise<User | undefined> {
   const users = await getUsers();
   return users.find( x => x.email === email );
-}
-export async function getUserById(id: number): Promise<User | undefined> {
-  const users = await getUsers();
-  return users.find( x => x.id === id );
 }
 
 export async function getUserByUsername(username: string): Promise<User | undefined> {
@@ -31,12 +32,12 @@ export async function getUserByUsername(username: string): Promise<User | undefi
   return users.find( x => x.username === username );
 }
 
-export async function createUser(user: string, password: string): Promise<User> {
-  return api("users", { method: "POST", body: JSON.stringify(user) });
+export async function createUser(user: User): Promise<User> {
+  return api('users/register', user, 'POST');
 }
 
 export function signIn(username: string, password: string) {
-    return api(`users/${username}`, {}, 'PATCH').then(user => {
+    return api(`user/${username}`, {}, 'PATCH').then(user => {
         if (user && user.password === password) {
             return user;
         } else {
@@ -44,3 +45,4 @@ export function signIn(username: string, password: string) {
         }
     })
 }
+

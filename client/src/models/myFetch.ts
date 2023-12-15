@@ -4,14 +4,14 @@
 
 const API_ROOT = import.meta.env.VITE_API_ROOT as string;
 
-export function rest(url: string, body?: unknown, method?: string, headers?: HeadersInit){
+export async function rest(url: string, data?: unknown, method?: string, headers?: any){
     return fetch(url, {
-        method: method ?? (body ? "POST" : "GET"),
+        method: method ?? (data ? "POST" : "GET"),
         headers: {
             'Content-Type': 'application/json',
             ...headers
         },
-        body: body ? JSON.stringify(body) : undefined
+        body: data ? JSON.stringify(data) : undefined
     })
         .then(response => response.ok 
             ? response.json()
@@ -20,8 +20,8 @@ export function rest(url: string, body?: unknown, method?: string, headers?: Hea
 
 }
 
-export function api(action: string, body?: unknown, method?: string, headers?: HeadersInit){
-    return rest(`${API_ROOT}/${action}`, body, method, headers);
+export function api(action: string, data?: unknown, method?: string, headers?: HeadersInit){
+    return rest(`${API_ROOT}/${action}`, data, method, headers);
 }
 
 

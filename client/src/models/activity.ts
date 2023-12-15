@@ -4,10 +4,6 @@ import { ref } from "vue";
 import data from "@/data/exercise.json"
 import { computed, reactive } from "vue";
 
-export type entryList = {
-    user: User,
-    entries: Entry[]
-}
 
 export interface Entry {
     id: number;
@@ -22,23 +18,12 @@ export interface Entry {
  *  {exercises: string, time: number}
  * ]
  */
-export const entryList = reactive<entryList>({
-    user: {
-        id: 0,
-        username: "",
-        name: "",
-        email: "",
-        password: "",
-        role: "user"
-    },
-    entries: []
-});
 
 
 export function getEntries(): Promise < Entry[] > {
     return api("entries");
 }
-export const addEntry = (id: number, exerciseType: string, time: number, description: string, again: boolean) => {
+/*export const addEntry = (id: number, exerciseType: string, time: number, description: string, again: boolean) => {
     let insertedEntry : Boolean = false;
     let entry = {
         id: id,
@@ -54,4 +39,4 @@ export const addEntry = (id: number, exerciseType: string, time: number, descrip
         }
     });
 
-}
+}*/
