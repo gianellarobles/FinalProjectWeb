@@ -1,0 +1,17 @@
+###
+http://localhost:3000/?id=1&name=John&password=1234
+
+###
+http://localhost:3000/api/v1/users
+
+###
+POST http://localhost:3000/api/v1/users/register
+Content-Type: application/json
+
+{
+  "name":"gianella",
+  "username":"gianella363",
+  "email":"gianellarobles@gmail.com",
+  "password":"gianella"
+}
+
