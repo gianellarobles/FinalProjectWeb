@@ -6,6 +6,12 @@ import { getSession } from "../models/session";
 
 
 const session = getSession();
+const { logout } = useLogin();
+
+const doLogout = () => {
+  logout();
+};
+
 
 </script>
 
@@ -15,7 +21,7 @@ const session = getSession();
 <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                       <div class ="navbar-brand">
                       
-                    <a class ="navbar-item" href="/">
+                    <a class ="navbar-item">
                             <i class="fas fa-hand-holding-heart"></i>
                         </a>
                           <a role ="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
@@ -75,8 +81,8 @@ const session = getSession();
                                          <strong>Log in</strong>
                                     </RouterLink>
                                   </div>
-                                  <div class="buttons" v-else>
-                                    <RouterLink class="button is-danger" to="/login">
+                                  <div class="buttons" v-else @click="doLogout()">
+                                    <RouterLink class="button is-danger" to="/" >
                                         <strong>Log out</strong>
                                     </RouterLink>
                                   </div>

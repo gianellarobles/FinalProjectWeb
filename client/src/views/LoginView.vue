@@ -5,21 +5,17 @@ import { ref } from 'vue';
 import value from 'vue';
 import type { User } from "../models/users";
 
-const username = ref('');
-const password = ref('');
+ const username = ref('');
+ const password = ref('');
 
 const session = getSession()
-const { login, logout } = useLogin()
+ const { login } = useLogin()
 
 const doLogin = () => {
   login(username.value, password.value).then((user:User | null) => {
     username.value = '';
     password.value = '';
   })
-}
-
-const doLogout = () => {
-  logout();
 }
 
 
@@ -62,7 +58,7 @@ const doLogout = () => {
          </div>  
        <br> 
      <div class="buttons is-centered" >                          
-       <a class="button is-danger" @click="doLogin"><!--@click="doLogin"-->
+       <a class="button is-danger" @click="doLogin">
          <strong>Sign in</strong> 
         </a>
          
