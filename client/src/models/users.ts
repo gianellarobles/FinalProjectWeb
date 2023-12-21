@@ -3,6 +3,7 @@
 
 import { api } from './session';
 import { type Entry } from './activity';
+import { type Posts } from './friends';
 
 export interface User {
   id :number,
@@ -13,6 +14,7 @@ export interface User {
   password: string,
   role: "admin" | "user",
   isAdmin: boolean,
+  posts?: Posts[],
   friends?: User[],
   entries?: Entry[],
   token?:string
