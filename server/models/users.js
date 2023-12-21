@@ -41,6 +41,15 @@ function search(query) {
   });
 }
 
+async function searchFriends(query) {
+  console.log(query)
+  const db = await collection();
+  const users = await db.find({
+    username: { $regex: query }.toLowerCase()
+  }).toArray()
+  return users;
+}
+
 /**
  * @param {BaseUser} values - The user to create.
  * @returns {User} The created user.
