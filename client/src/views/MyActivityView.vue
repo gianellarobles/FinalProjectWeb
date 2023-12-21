@@ -1,10 +1,25 @@
 <script setup lang="ts">
+import { getUsers, type User } from '../models/users';
+import { getSession } from '../models/session';
+import { ref, toDisplayString } from 'vue';
+import value from 'vue';
+
+const session = getSession()
+const time = ref(0)
+const exercise = ref('')
+const message = ref('')
+const again = ref(false)
+
+function onChange(event:any):void {
+    console.log(event.target.value,time)
+}
 
 </script>
 
 <template>
     <div class="activity">
     
+       <div class="form">
           <section class="section">
             <div class="container">
                 <div class="columns has-text-white">
@@ -28,7 +43,7 @@
                             <label class="label has-text-dark">Exercise</label>
                             <div class="control">
                                 <div class="select is-danger">
-                                 <select>
+                                 <select v-model="exercise">
                                     <option>Select Exercise</option>
                                      <option>Yoga</option>
                                      <option>Pilates</option>
@@ -45,26 +60,29 @@
                                 <label class="label has-text-dark">Time</label>
                                 <div class="control">
                                     <div class="select is-danger">
-                                          <select>
+                                          <select @change="onChange" v-model="time">
                                             <option>Select Time</option>
-                                            <option>5 min</option>
-                                            <option>10 min</option>
-                                            <option>15 min</option>
-                                            <option>30 min</option>
-                                            <option>45 min</option>
-                                            <option>1 hour</option>
-                                            <option>More than 1 hour</option>
+                                            <option value="1">5 min</option>
+                                            <option value="2">10 min</option>
+                                            <option value="3">15 min</option>
+                                            <option value="4">30 min</option>
+                                            <option value="5">45 min</option>
+                                            <option value="6">1 hour</option>
+                                            <option value="7">More than 1 hour</option>
                                         </select>
                                     </div>
                                      <p class="help is-success is-danger">Great Job!</p>
+
+                                     {{ time }}
                                 </div>
                             </div>                
                         <div class="field">
                             <label class="label has-text-dark">Message</label>
                             <div class="control">
-                                <textarea class="textarea is-danger" placeholder="Textarea"></textarea>
+                                <textarea class="textarea is-danger" placeholder="Textarea" v-model="message"></textarea>
                             </div>
                         </div>
+
                 
                        <p class="title is-6 has-text-dark">Would you do this excerise again?</p>
                         <div class="field">
@@ -82,16 +100,17 @@
                     
                         <div class="field is-grouped">
                             <div class="control">
-                                <button class="button is-danger">Submit</button>
+                                <button class="button is-danger"><strong>Submit</strong></button>
                             </div>
                             <div class="control">
-                                <button class="button has-text-danger is-light">Cancel</button>
+                                <button class="button has-text-danger is-light"><strong>Cancel</strong></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        </div>
     </div>
 </template>
 

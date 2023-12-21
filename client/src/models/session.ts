@@ -62,7 +62,7 @@ export function useLogin(){
     },
     logout(){
       session.user = null;
-      router.push("/login");
+      router.push("/");
     }
   }
 }
