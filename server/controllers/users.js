@@ -9,7 +9,7 @@ router
       .addUser(req.params.username, req.params.password)
       .then((result) => res.status(200).send(result));
   })
-  .patch("/:username", (req, res) => {
+  .get("/:username", (req, res) => {
     users
       .getUser(req.params.username)
       .then((user) => res.status(200).send(user));
