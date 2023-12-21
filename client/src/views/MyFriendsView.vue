@@ -1,14 +1,41 @@
 <script setup lang="ts">
 import { ref, toDisplayString } from 'vue';
+import { getUserByUsername } from '../models/users';
+import { getSession } from '../models/session';
+import { getUsers, type User } from '../models/users';
+import value from 'vue';
 
-const currentLikes = ref(0);
 
+
+const session = getSession()
+const currentLikes = ref(0)
+const users = ref([] as User[])
+const name = getName()
+const username = getUsername()
+const friends = checkFriends()
+
+function getName(): any {
+  if (session.user) {
+    return(session.user.name)
+  }
+}
+
+function getUsername(): any {
+  if (session.user) {
+    return(session.user.username)
+  }
+}
+function checkFriends(): any {
+  if (session.user) {
+    return(session.user.friends)
+  }
+}
 
 </script>
 
   
 <template>
-    <div class="friends">
+  <div class="friends">
         <br>
         <br>
         <div class="box">
@@ -28,13 +55,13 @@ const currentLikes = ref(0);
           <div class="content is-size-5">
             <p>
               <br>
-              <strong>Name: </strong><strong>Angela Oaks</strong> 
+              <strong>Name: </strong>{{ name }}<strong></strong> 
               <br>
-              <strong>Username: </strong><small>@angieOaks</small> 
+              <strong>Username: </strong><small> {{ username }}</small> 
               <br><br>
               <strong>Bio: </strong>
               <br>
-              Hi, I am Angie and I am looking for a workout buddy!
+              Hi, I am {{ name }} and I am looking for a workout buddy!
             </p>
             <strong>Status: <span class="icon has-text-warning">
                       <i class="fas fa-smile-beam"></i>
@@ -134,7 +161,7 @@ const currentLikes = ref(0);
       </div>
     </article>
   </div>
-    </div>
+  </div>
 </template>
 
 <style>
