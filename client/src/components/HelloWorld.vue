@@ -72,7 +72,7 @@ const doLogout = () => {
 
                           <div class="navbar-end">
                               <div class="navbar-item">
-                                  <div class="buttons" v-if="!session.user">
+                                  <div class="buttons">
                                    <RouterLink class ="button is-danger" to="/signup"> 
                                           <strong>Sign Up</strong>
                                     </RouterLink>
@@ -81,7 +81,7 @@ const doLogout = () => {
                                          <strong>Log in</strong>
                                     </RouterLink>
                                   </div>
-                                  <div class="buttons" v-else @click="doLogout()">
+                                  <div class="buttons">
                                     <RouterLink class="button is-danger" to="/" >
                                         <strong>Log out</strong>
                                     </RouterLink>
