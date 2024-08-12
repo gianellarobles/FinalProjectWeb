@@ -30,14 +30,14 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/MyActivityView.vue'),
-      beforeEnter: requireLogin,
+  
     },
     {
       path: '/statistics',
       name: 'statistics',
 
       component: () => import('../views/MyStatisticsView.vue'),
-      beforeEnter: requireLogin,
+  
 
     },
     {
@@ -45,7 +45,7 @@ const router = createRouter({
       name: 'friends',
 
       component: () => import('../views/MyFriendsView.vue'),
-      beforeEnter: requireLogin,
+    
       
     },
     {
@@ -53,7 +53,7 @@ const router = createRouter({
       name: 'search',
 
       component: () => import('../views/PeopleSearchView.vue'),
-      beforeEnter: requireLogin,
+  
     },
     {
       path: '/login',
