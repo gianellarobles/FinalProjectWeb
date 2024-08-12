@@ -81,11 +81,7 @@ const doLogout = () => {
                                          <strong>Log in</strong>
                                     </RouterLink>
                                   </div>
-                                  <div class="buttons">
-                                    <RouterLink class="button is-danger" to="/" >
-                                        <strong>Log out</strong>
-                                    </RouterLink>
-                                  </div>
+                    
                               </div>
                          </div>
                      </div>
